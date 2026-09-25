@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://clutcher.io/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Calculator</title>
+    <style>
+        /* Force the browser window to have zero margin and hide scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000; /* Matching dark background while it loads */
+        }
+        /* Make the frame expand to fill the entire browser window */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://clutcher.io/">link to Clutcher.io</a>.</p>
+
+    <iframe 
+        src="https://clutcher.io/" 
+        allow="autoplay; fullscreen; gamepad"
+        title="Clutcher.io Game Frame">
+    </iframe>
+
 </body>
 </html>
