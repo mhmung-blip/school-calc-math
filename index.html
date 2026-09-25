@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Calculator</title>
+    <title>My GitHub Arcade</title>
     <style>
-        /* Force the browser window to have zero margin and hide scrollbars */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #000; /* Matching dark background while it loads */
+            background-color: #111;
         }
-        /* Make the frame expand to fill the entire browser window */
         iframe {
             width: 100%;
             height: 100%;
@@ -24,10 +22,12 @@
 </head>
 <body>
 
+    <!-- The sandbox attribute here blocks frame-busting scripts from hijacking your page -->
     <iframe 
-        src="https://clutcher.io/" 
-        allow="autoplay; fullscreen; gamepad"
-        title="Clutcher.io Game Frame">
+        src="https://clutcher.io" 
+        sandbox="allow-scripts allow-same-origin allow-pointer-lock"
+        allow="autoplay; fullscreen; gamepad; pointer-lock"
+        title="Game Container">
     </iframe>
 
 </body>
